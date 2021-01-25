@@ -1225,6 +1225,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "ADO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/ADO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ADO.dll": {}
+        }
       }
     }
   },
@@ -4613,10 +4623,16 @@
         "system.xml.xpath.xmldocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xmldocument.nuspec"
       ]
+    },
+    "ADO/1.0.0": {
+      "type": "project",
+      "path": "../src/ADO.csproj",
+      "msbuildProject": "../src/ADO.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "ADO >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "NUnit >= 3.12.0",
       "NUnit3TestAdapter >= 3.16.1"
@@ -4648,7 +4664,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\e3849\\Work\\General\\ado_prac\\src\\ADO.csproj": {
+              "projectPath": "C:\\Users\\e3849\\Work\\General\\ado_prac\\src\\ADO.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
